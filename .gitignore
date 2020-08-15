@@ -1,0 +1,7 @@
+*.pyc
+*.swp
+frontpage_images/
+/media/
+/static/
+
+db.sqlite3
