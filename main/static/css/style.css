@@ -4,15 +4,44 @@
     Carousel styling
  */
 
-
+body {
+    font-family: 'Old Standard TT', serif;
+}
 
 .carousel-item img {
     position: relative;
+    opacity: 1;
 }
 
-.overlay-header {
+.main-header {
+    color: #23292E;
+    font-size: 60px;
+    font-style: bold;
     position: absolute;
+    left: 50%;
+    margin-right: -50%;
     top: 10%;
+    transform: translate(-50%, -50%)
+}
+
+.main-header:hover {
+    pointer-events: none;
+}
+
+.image-header {
+    color: rgb(240,240,240);
+    font-size: 50px;
+    font-style: Bold;
+    transition: .5s ease;
+    opacity: 1  ;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-header:hover {
+    pointer-events: none;
 }
 
 .left-overlay {
@@ -20,9 +49,29 @@
     top: 50%;
     left: 15%;
     width: 25%;
+    border-radius: .25rem;
+    background: rgb(0,0,0);
 }
 
-.left-overlay img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  opacity: 0.5;
+.right-overlay {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    width: 25%;
+    border-radius: .25rem;
+    background: rgb(0,0,0);
+}
+
+.right-overlay img {
+    clip: rect(0px,360px,264.45px,0px);
+}
+
+.left-overlay:hover img {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.right-overlay:hover img {
+    opacity: 0.5;
+    pointer-events: none;
 }

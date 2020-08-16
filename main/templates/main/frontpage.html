@@ -6,7 +6,7 @@
 {% endblock styles %}
 
 {% block body %}
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
     <!-- Indicators -->
 
     <ol class="carousel-indicators">
@@ -28,7 +28,6 @@
       {% endfor %}
     </div>
 
-
     <!-- Controls -->
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -40,9 +39,17 @@
     </a>
   </div>
 
-
-  <div class="left-overlay">
-      <img class="img-thumbnail" src="/media/ungdomsherberge1.jpg"
+  <div class="main-header">
+      VI GIFTER OSS!
   </div>
 
+  <div class="left-overlay">
+      <img class="img-thumbnail" src="/media/ungdomsherberge1.jpg">
+      <div class="image-header">Stedet</div>
+  </div>
+
+  <div class="right-overlay">
+      <img class="img-thumbnail" src="/media/IMG_0113.jpeg">
+      <div class="image-header">Påmelding</div>
+  </div>
 {% endblock body %}
