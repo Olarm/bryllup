@@ -13,15 +13,41 @@ body {
     opacity: 1;
 }
 
-.main-header {
-    color: #23292E;
-    font-size: 60px;
-    font-style: bold;
+.main-overlay {
     position: absolute;
+    top: 20%;
+    height: 200px;
+    width: 45%;
     left: 50%;
     margin-right: -50%;
-    top: 10%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    border-radius: .25rem;
+    background: rgba(0,0,0, 0.2);
+}
+
+.main-pos {
+    width: 100%;
+    color: rgb(240,240,240);
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-header {
+    text-align: center;
+    font-size: 60px;
+    font-style: Bold;
+    top: 40%;
+}
+
+.main-sub {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 30px;
+    font-style: Bold;
+    top: 80%;
 }
 
 .main-header:hover {
@@ -44,13 +70,23 @@ body {
     pointer-events: none;
 }
 
+.my-img {
+    background-color: rgba(255,255,255,0.5);
+    border: 0px solid #dee2e6;
+    max-width: 100%;
+    height: auto;
+}
+
 .left-overlay {
     position: absolute;
     top: 50%;
     left: 15%;
     width: 25%;
+    min-width: 150px;
+    max-width: 350px;
     border-radius: .25rem;
     background: rgb(0,0,0);
+    border: 3px solid rgba(255,255,255, 0.8);
 }
 
 .right-overlay {
@@ -58,12 +94,15 @@ body {
     top: 50%;
     right: 15%;
     width: 25%;
+    min-width: 150px;
+    max-width: 350px;
     border-radius: .25rem;
     background: rgb(0,0,0);
+    border: 3px solid rgba(255,255,255, 0.8);
 }
 
-.right-overlay img {
-    clip: rect(0px,360px,264.45px,0px);
+.right-overlay:hover,.left-overlay:hover {
+    border: 3px solid rgba(255,255,255,0.3);
 }
 
 .left-overlay:hover img {
@@ -74,4 +113,20 @@ body {
 .right-overlay:hover img {
     opacity: 0.5;
     pointer-events: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding: 0% 15% 5%;
+}
+
+.text-header {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 5%;
+}
+.text-block {
+    text-align: center;
+    padding-bottom: 10%;
 }
