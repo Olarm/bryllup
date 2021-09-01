@@ -1,28 +1,48 @@
 
 
-/*
-    Carousel styling
- */
+
+ .top_img {
+     margin: 0;
+     padding: 0;
+ }
+
+ .parallax {
+   /* The image used */
+   background-image: url("borg_port.webp");
+
+   /* Set a specific height */
+   /*min-height: 100vh;*/
+   height: auto;
+   min-height: 100vh;
+
+   width: 100%;
+   display: grid;
+   -webkit-filter: brightness(1);
+   filter: brightness(1);
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+
 
 body {
     font-family: 'Old Standard TT', serif;
 }
 
-.carousel-item img {
-    position: relative;
-    opacity: 1;
-}
-
 .main-overlay {
     position: absolute;
-    top: 20%;
+    top: 30%;
     height: 200px;
     width: 45%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     border-radius: .25rem;
-    background: rgba(0,0,0, 0.2);
+    background: rgba(0,0,0, 0.3);
 }
 
 .main-pos {
@@ -50,73 +70,8 @@ body {
     top: 80%;
 }
 
-.main-header:hover {
-    pointer-events: none;
-}
-
-.image-header {
-    color: rgb(240,240,240);
-    font-size: 50px;
-    font-style: Bold;
-    transition: .5s ease;
-    opacity: 1  ;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.image-header:hover {
-    pointer-events: none;
-}
-
-.my-img {
-    background-color: rgba(255,255,255,0.5);
-    border: 0px solid #dee2e6;
-    max-width: 100%;
-    height: auto;
-}
-
-.left-overlay {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    width: 25%;
-    min-width: 150px;
-    max-width: 350px;
-    border-radius: .25rem;
-    background: rgb(0,0,0);
-    border: 3px solid rgba(255,255,255, 0.8);
-}
-
-.right-overlay {
-    position: absolute;
-    top: 50%;
-    right: 15%;
-    width: 25%;
-    min-width: 150px;
-    max-width: 350px;
-    border-radius: .25rem;
-    background: rgb(0,0,0);
-    border: 3px solid rgba(255,255,255, 0.8);
-}
-
-.right-overlay:hover,.left-overlay:hover {
-    border: 3px solid rgba(255,255,255,0.3);
-}
-
-.left-overlay:hover img {
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-.right-overlay:hover img {
-    opacity: 0.5;
-    pointer-events: none;
-}
-
 .container {
-    height: 100vh;
+    height: 100%;
     width: 60%;
     overflow: scroll;
     display: flex;
