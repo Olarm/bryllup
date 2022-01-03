@@ -1,5 +1,10 @@
 
-
+ul {
+    text-align: center;
+    list-style-position: inside;
+    border: 1px;
+    padding: 0;
+}
 
  .top_img {
      margin: 0;
