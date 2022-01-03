@@ -6,6 +6,11 @@ ul {
     padding: 0;
 }
 
+.container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
  .top_img {
      margin: 0;
      padding: 0;
