@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+    display: none;
+}
 
 ul {
     text-align: center;
@@ -9,6 +12,9 @@ ul {
 .container {
     overflow-y: hidden;
     overflow-x: hidden;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
 }
 
  .top_img {
